@@ -1,85 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Your Analytics Portfolio</h1>
-    <p>Showcasing my data analytics projects</p>
-    <nav class="menu">
-        <button class="menu-button">Home</button>
-        <button class="menu-button">Projects</button>
-        <button class="menu-button">About</button>
-        <button class="menu-button">Contact</button>
-    </nav>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #35424a;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .project {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .project h2 {
-            margin-top: 0;
-        }
-
-        .project p {
-            margin-top: 1rem;
-        }
-
-        footer {
-            background-color: #35424a;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-        .menu {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.menu-button {
-    background-color: #35424a;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.menu-button:hover {
-    background-color: #2b363d;
-}
-    </style>
-</head>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SLEJR1CDJ"></script>
 <script>
@@ -90,26 +11,104 @@
   gtag('config', 'G-0SLEJR1CDJ');
 </script>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Navigation styles */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #35424a;
+            color: white;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* About section styles */
+        .about {
+            padding: 3rem;
+        }
+
+        /* Projects section styles */
+        .projects {
+            background-color: #f4f4f4;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        /* Contact section styles */
+        .contact {
+            padding: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <h1>Your Analytics Portfolio</h1>
-        <p>Showcasing my data analytics projects</p>
-    </header>
-    <div class="container">
-        <div class="project">
-            <h2>Project 1: Data Analysis Example</h2>
-            <p>A brief description of the project and the techniques used.</p>
-            <a href="project1.html">Read more</a>
-        </div>
-        <div class="project">
-            <h2>Project 2: Visualization Showcase</h2>
-            <p>Exploring data through compelling visualizations.</p>
-            <a href="project2.html">Read more</a>
-        </div>
-        <!-- Add more projects here -->
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
-    <footer>
-        <p>&copy; 2023 Siddig Mohamed. All rights reserved.</p>
-    </footer>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing My Analytics Projects</p>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet est sit amet tincidunt.</p>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="projects">
+        <h2>Analytics Projects</h2>
+        <!-- Project cards go here -->
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out:</p>
+        <p>Email: your@email.com</p>
+    </section>
 </body>
 </html>
