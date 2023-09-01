@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Analytics Portfolio</title>
+    <h1>Your Analytics Portfolio</h1>
+    <p>Showcasing my data analytics projects</p>
+    <nav class="menu">
+        <button class="menu-button">Home</button>
+        <button class="menu-button">Projects</button>
+        <button class="menu-button">About</button>
+        <button class="menu-button">Contact</button>
+    </nav>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,6 +58,25 @@
             bottom: 0;
             width: 100%;
         }
+        .menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #2b363d;
+}
     </style>
 </head>
 
