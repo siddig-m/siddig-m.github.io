@@ -188,7 +188,7 @@ a:hover {
   position: absolute;
   height: 3px;
   background-color: #0078ff;
-  width: 100px;
+  width: 10 0px;
   bottom: -12px;
 }
 
@@ -200,7 +200,15 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.box-shadow-full2 {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #61616100;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -1061,6 +1069,7 @@ a:hover {
 .testimonial-box {
   color: #fff;
   text-align: center;
+  align-items: center;
 }
 
 .testimonial-box .author-test {
@@ -1124,6 +1133,20 @@ a:hover {
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
+}
+
+.contactme-box {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Adjust as needed to center vertically within the viewport */
+}
+
+.list-icon {
+  list-style-type: none; /* Remove list bullets */
+  padding: 0;
+  display: flex; /* Display items horizontally */
+  gap: 20px; /* Adjust the gap between items as needed */
 }
 
 /*--------------------------------------------------------------
@@ -1229,7 +1252,7 @@ a:hover {
   width: 30px; /* Adjust the size as needed */
   height: 30px; /* Adjust the size as needed */
   background-color: #ffffff; /* LinkedIn blue color */
-  color: #fff; /* White color for the icon */
+  color: #000000; /* White color for the icon */
   border-radius: 50%; /* Create a circular shape */
   text-align: center;
   line-height: 30px; /* Center the icon vertically */
@@ -1237,8 +1260,8 @@ a:hover {
 }
 
 .contact-icon:hover{
-  background-color: #0062d3;
-  color:#18d26e
+  background-color: #ffffff;
+  color:#000000
 }
 
 
